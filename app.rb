@@ -8,6 +8,10 @@ get('/') do
 end
 
 get('/cents') do
-  @cents = params.fetch('cents').coin_combo()
+  # cents_string = params.fetch('cents')
+  # cents_fixnum = cents_string.to_i()
+  # @cents = cents_fixnum.coin_combo()
+
+  @cents = params.fetch('cents').to_i().coin_combo()
   erb(:cents)
 end
