@@ -7,6 +7,6 @@ class Fixnum
     nickels = self.-(quarters.*(25)).-(dimes.*(10))./(5)
     pennies = self.-(quarters.*(25)).-(dimes.*(10)).-(nickels.*(5))./(1)
 
-    end
+    
   end
 end
